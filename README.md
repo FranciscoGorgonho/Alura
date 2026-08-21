@@ -1,8 +1,6 @@
 # Alura — Portfólio de QA & Front-end
 
-Repositório com projetos práticos desenvolvidos ao longo dos cursos de **Testes de Software (QA)** e **Desenvolvimento Front-end** da Alura, reorganizado como portfólio técnico.
-
-Cada pasta é um projeto independente, com seu próprio `package.json`/dependências e instruções de execução.
+Vitrine dos projetos práticos desenvolvidos ao longo dos cursos de **Testes de Software (QA)** e **Desenvolvimento Front-end** da Alura. Cada projeto vive em seu próprio repositório — este README serve como índice.
 
 ## Stack & Ferramentas
 
@@ -19,54 +17,15 @@ Cada pasta é um projeto independente, com seu próprio `package.json`/dependên
 
 | Projeto | Tipo de teste | Ferramentas | Competências demonstradas |
 |---|---|---|---|
-| [alurapic-cypress-e2e-tests](./alurapic-cypress-e2e-tests) | E2E | Cypress, Mochawesome | Automação de login, cadastro, busca e testes de API sobre uma aplicação real |
-| React - Testes de integração e mocks no Front-end 🔄 *(em migração)* | Integração | Jest, React Testing Library | — |
-| React Js - Testes automatizados no Front-end 🔄 *(em migração)* | Unitário/Integração | Jest, React Testing Library | — |
-| RobotFramework 🔄 *(em migração)* | BDD/Aceitação | Robot Framework, Python | — |
-| Teste de Integração - SQL e DAOs 🔄 *(em migração)* | Integração | Java, JUnit, SQL | — |
-| testes-e2e-cypress-v2-main 🔄 *(em migração)* | E2E | Cypress | — |
+| [alurapic-cypress-e2e-tests](https://github.com/FranciscoGorgonho/alurapic-cypress-e2e-tests) | E2E | Cypress, Mochawesome | Automação de login, cadastro, busca e testes de API sobre uma aplicação real |
+| React - Testes de integração e mocks no Front-end 🔄 *(ainda no monorepo, pendente de extração)* | Integração | Jest, React Testing Library | — |
+| React Js - Testes automatizados no Front-end 🔄 *(ainda no monorepo, pendente de extração)* | Unitário/Integração | Jest, React Testing Library | — |
+| RobotFramework 🔄 *(ainda no monorepo, pendente de extração)* | BDD/Aceitação | Robot Framework, Python | — |
+| Teste de Integração - SQL e DAOs 🔄 *(ainda no monorepo, pendente de extração)* | Integração | Java, JUnit, SQL | — |
+| testes-e2e-cypress-v2-main 🔄 *(ainda no monorepo, pendente de extração)* | E2E | Cypress | — |
 
-> Projetos marcados como *em migração* ainda estão com o nome/estrutura original e serão padronizados nas próximas etapas.
+> Projetos marcados como *pendentes de extração* ainda estão dentro deste monorepo com o nome/estrutura original. Cada um será renomeado, movido para um repositório próprio e listado aqui com o link definitivo.
 
-## Como executar os testes
+## Como usar este índice
 
-Cada projeto é independente. Entre na pasta correspondente e siga as instruções abaixo (ou o `README.md` local, quando houver).
-
-### Cypress (E2E)
-```bash
-cd alurapic-cypress-e2e-tests
-npm install
-npx cypress open   # modo interativo
-npx cypress run    # modo headless (CI)
-```
-
-### React + Jest / React Testing Library
-```bash
-cd <pasta-do-projeto-react>
-npm install
-npm test
-```
-
-### Robot Framework
-```bash
-cd RobotFramework
-pip install -r requirements.txt   # se houver
-robot <caminho-do-teste>.robot
-```
-
-### Java + SQL (JUnit/DAO)
-```bash
-cd "Teste de Integração-Testes de SQL e DAOS automatizados em Java"
-mvn test   # ou gradle test, conforme o build tool do projeto
-```
-
-## Sobre o AluraPic (Cypress E2E)
-
-Suíte de testes end-to-end com **Cypress** cobrindo a aplicação de fotos *AluraPic*, incluindo:
-
-- **Login** — autenticação de usuário
-- **Cadastro** — criação de novos usuários
-- **Busca** — pesquisa de conteúdo na aplicação
-- **API** — validação de endpoints via requisições HTTP
-
-Relatórios de execução são gerados com **Mochawesome** (`cypress/report/`, ignorado no controle de versão).
+Cada linha da tabela leva ao repositório do projeto, que contém seu próprio `README.md` com instruções de instalação e execução (`npm test`, `npx cypress open`, `robot`, `mvn test`, etc.).
